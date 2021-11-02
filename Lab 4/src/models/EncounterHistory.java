@@ -66,6 +66,8 @@ public class EncounterHistory {
     
     
     public ArrayList<Encounter> getListOfEncounters() {
+        System.out.println("LL:  ");
+                
         return listOfEncounters;
     }
 

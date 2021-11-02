@@ -62,7 +62,7 @@ public class MainJFrame1 extends javax.swing.JFrame {
         }
        this.listOfPerson = new PersonDirectory();
        this.listOfPatient = new PatientDirectory();
-//       this.encounterHistory= new EncounterHistory(ssn);
+       //this.encounterHistory= new EncounterHistory(ssn); // this was commented on the first commit
        this.listOfCommunity = city.getListOfCommunity();
         this.listOfCity = systemsObj.getListOfCity();
 //        this.listOfHouses = community.getListOfHouse();

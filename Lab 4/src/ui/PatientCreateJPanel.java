@@ -219,17 +219,7 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
         {
             disease=txtInsertDisease.getText(); 
             System.out.println("check6 "+txtInsertDisease.getText());
-            // Prints disease
-        }else{System.out.println("This is an invalid Input");
-            flag_count1=0;
-        }
-        } 
-       
-      
-       if(flag_count1==1){
-            JOptionPane.showMessageDialog(this, "Patient Information Saved.");
-        
-        Patient patient ;
+            Patient patient ;
             try {
                 patient = new Patient(name, ssn, address, age, sex, phoneNumber,disease);
                         this.listOfPatient.addNewPatient(patient);
@@ -241,13 +231,41 @@ public class PatientCreateJPanel extends javax.swing.JPanel {
             } catch (BadLocationException ex) {
                 Logger.getLogger(PatientCreateJPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
+                        JOptionPane.showMessageDialog(this, "Patient Information Saved.");
+
+            // Prints disease
+        }else{System.out.println("This is an invalid Input");
+            flag_count1=0;
         }
-       else if(flag_count1==1 &&flag_count ==1 ){
-        JOptionPane.showMessageDialog(this, "Invalid SSN");
-       }
-    else{
-            JOptionPane.showMessageDialog(this, "Invalid SSN");
-     }
+        } 
+        else {
+                    JOptionPane.showMessageDialog(this, "Invalid SSN");
+
+        }
+       
+      
+//       if(flag_count1==1){
+//            JOptionPane.showMessageDialog(this, "Patient Information Saved.");
+//        
+//        Patient patient ;
+//            try {
+//                patient = new Patient(name, ssn, address, age, sex, phoneNumber,disease);
+//                        this.listOfPatient.addNewPatient(patient);
+//
+//            } catch (IOException ex) {
+//                Logger.getLogger(PatientCreateJPanel.class.getName()).log(Level.SEVERE, null, ex);
+//            } catch (ParseException ex) {
+//                Logger.getLogger(PatientCreateJPanel.class.getName()).log(Level.SEVERE, null, ex);
+//            } catch (BadLocationException ex) {
+//                Logger.getLogger(PatientCreateJPanel.class.getName()).log(Level.SEVERE, null, ex);
+//            }
+//        }
+//       else if(flag_count1==1 &&flag_count ==1 ){
+//        JOptionPane.showMessageDialog(this, "Invalid SSN");
+//       }
+//    else{
+//            JOptionPane.showMessageDialog(this, "Invalid SSN");
+//     }
        
 //        Person person = new Person(name,ssn,address, age,sex,phoneNumber);
       

@@ -41,9 +41,9 @@ public class PatientModifyViewJPanel extends javax.swing.JPanel {
         initComponents();
         this.listOfPatient = listOfPatient;
         this.encounterHistory = encounterHistory;
-   
+        System.out.println("LL:  "+this.encounterHistory);
         
-        populateEncounterTable(this.encounterHistory.getListOfEncounters());
+//        populateEncounterTable(this.encounterHistory.getListOfEncounters());
     }
 private void populateEncounterTable(ArrayList<Encounter> encounterHistory) {
       //  throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -308,7 +308,7 @@ txtViewSex.setText(this.listOfPatient.getListOfPatients().get(i).getSex());
 txtViewAddress.setText(this.listOfPatient.getListOfPatients().get(i).getAddress());
 txtViewPhoneNumber.setText(Long.toString(this.listOfPatient.getListOfPatients().get(i).getPhoneNumber()));
 txtViewDisease.setText(this.listOfPatient.getListOfPatients().get(i).getDisease());
-
+populateEncounterTable(this.listOfPatient.getListOfPatients().get(i).getEncounterHistory().getListOfEncounters());// added
 break;
 }
 
