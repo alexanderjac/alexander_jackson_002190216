@@ -43,6 +43,8 @@ public class MainJFrame extends javax.swing.JFrame {
     private OrderDirectory orderDirectory;
     public MainJFrame() throws IOException {
         initComponents();
+//        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("Images/40932571-food-delivery-design.jpg" ))); // NOI18N
+
         
         system = dB4OUtil.retrieveSystem();
         this.setSize(1680, 1050);
@@ -76,13 +78,12 @@ public class MainJFrame extends javax.swing.JFrame {
         container = new javax.swing.JPanel();
         CardSequenceJPanel = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        loginJButton.setBackground(new java.awt.Color(237, 56, 51));
+        loginJButton.setBackground(new java.awt.Color(18, 16, 89));
         loginJButton.setForeground(new java.awt.Color(255, 255, 255));
         loginJButton.setText("Login");
         loginJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -165,14 +166,10 @@ public class MainJFrame extends javax.swing.JFrame {
 
         container.setLayout(new java.awt.CardLayout());
 
-        CardSequenceJPanel.setBackground(new java.awt.Color(237, 56, 51));
+        CardSequenceJPanel.setBackground(new java.awt.Color(254, 116, 44));
         CardSequenceJPanel.setBorder(new javax.swing.border.MatteBorder(null));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/LogoMakr_1HwjIt.png"))); // NOI18N
-
-        jLabel18.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("We speak the good food language ");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/40932571-food-delivery-design.jpg"))); // NOI18N
 
         javax.swing.GroupLayout CardSequenceJPanelLayout = new javax.swing.GroupLayout(CardSequenceJPanel);
         CardSequenceJPanel.setLayout(CardSequenceJPanelLayout);
@@ -180,21 +177,15 @@ public class MainJFrame extends javax.swing.JFrame {
             CardSequenceJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CardSequenceJPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, CardSequenceJPanelLayout.createSequentialGroup()
-                .addContainerGap(267, Short.MAX_VALUE)
-                .addComponent(jLabel18)
-                .addGap(542, 542, 542))
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 1086, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(146, Short.MAX_VALUE))
         );
         CardSequenceJPanelLayout.setVerticalGroup(
             CardSequenceJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(CardSequenceJPanelLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
-                .addContainerGap(758, Short.MAX_VALUE))
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 821, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         container.add(CardSequenceJPanel, "homeCard");
@@ -227,7 +218,7 @@ public class MainJFrame extends javax.swing.JFrame {
             loginJButton.setEnabled(false);
        }
        else{
-           JOptionPane.showMessageDialog(null, "Username or password incorrect. Please try again.");
+           JOptionPane.showMessageDialog(null, "Username or password is incorrect. Please try again.");
        }
 //       
     }//GEN-LAST:event_loginJButtonActionPerformed
@@ -308,7 +299,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel container;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;

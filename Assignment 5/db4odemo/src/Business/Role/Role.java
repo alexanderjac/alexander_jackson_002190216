@@ -44,9 +44,18 @@ public abstract class Role {
         }
     }
     
+//    public abstract JPanel createWorkArea(JPanel userProcessContainer, 
+//            UserAccount account,  
+//            EcoSystem business);
+    
     public abstract JPanel createWorkArea(JPanel userProcessContainer, 
             UserAccount account,  
-            EcoSystem business);
+            EcoSystem business,
+            CustomerDirectory customerDirectory,
+            RestaurantDirectory restaurantDirectory,
+            DeliveryManDirectory deliveryManDirectory,
+            MenuDirectory menuDirectory,
+            OrderDirectory orderDirectory);
 
     @Override
     public String toString() {

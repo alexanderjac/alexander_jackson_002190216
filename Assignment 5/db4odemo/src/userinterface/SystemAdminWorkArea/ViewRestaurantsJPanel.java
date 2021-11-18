@@ -208,9 +208,9 @@ public class ViewRestaurantsJPanel extends javax.swing.JPanel {
     private void saveBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveBtnActionPerformed
         // TODO add your handling code here:
         if (nameTextField.getText().isEmpty() || addressTextField.getText().isEmpty() || contactTextField.getText().isEmpty() || managerNameTextField.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Please enter all fields!");
+            JOptionPane.showMessageDialog(null, "Please enter all the fields!");
         } else if (!phoneFormat(contactTextField.getText())) {
-            JOptionPane.showMessageDialog(null, "Phone format incorrect!");
+            JOptionPane.showMessageDialog(null, "Phone Number format is incorrect!");
         } else {
             restaurant.setManagerName(managerNameTextField.getText());
             restaurant.setAddress(addressTextField.getText());

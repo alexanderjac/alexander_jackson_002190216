@@ -175,11 +175,11 @@ public class ViewCustomersJPanel extends javax.swing.JPanel {
         String address = customerAddressTextField.getText();
         
         if(name.isEmpty() || phone.isEmpty() || address.isEmpty()){
-            JOptionPane.showMessageDialog(null, "Please enter all fields!");
+            JOptionPane.showMessageDialog(null, "Please enter all the fields!");
         }
         else if(!phoneFormat(phone))
         {
-            JOptionPane.showMessageDialog(null, "Phone format incorrect!");
+            JOptionPane.showMessageDialog(null, "Phone Number format is incorrect!");
         }
         else{
             customerDirectory.updateCustomer(id,name,phone,address);

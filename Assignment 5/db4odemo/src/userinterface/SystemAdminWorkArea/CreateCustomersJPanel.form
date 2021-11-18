@@ -42,11 +42,9 @@
                       <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                       <Component id="btnaddCustomer" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="103" alignment="0" groupAlignment="0" attributes="0">
-                      <Component id="lblCustomerName" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblCustomerNo" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="lblCustomerAddress" alignment="0" min="-2" max="-2" attributes="0"/>
-                  </Group>
+                  <Component id="lblCustomerName" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCustomerNo" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCustomerAddress" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="lblPassword" min="-2" max="-2" attributes="0"/>

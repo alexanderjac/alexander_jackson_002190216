@@ -177,10 +177,10 @@ public class CreateCustomersJPanel extends javax.swing.JPanel {
         }
         else if(!phoneFormat(phoneNumber))
         {
-            JOptionPane.showMessageDialog(null, "PhoneNumber format incorrect!");
+            JOptionPane.showMessageDialog(null, "PhoneNumber format is incorrect!");
         }
         else if(!customerDirectory.isPhoneUnique(phoneNumber)){
-            JOptionPane.showMessageDialog(null, "PhoneNumber already registered!");
+            JOptionPane.showMessageDialog(null, "PhoneNumber already is  registered!");
         }
         else if(!system.getUserAccountDirectory().checkIfUsernameIsUnique(username)){
             JOptionPane.showMessageDialog(null, "Username already exists!");

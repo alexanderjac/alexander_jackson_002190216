@@ -191,14 +191,14 @@ public class CreateDeliveryManJPanel extends javax.swing.JPanel {
         String password = txtpassword.getText();
         
         if(name.isEmpty() || phoneNumber.isEmpty() || address.isEmpty()|| username.isEmpty() || password.isEmpty() || img == null){
-            JOptionPane.showMessageDialog(null, "Please enter all fields!");
+            JOptionPane.showMessageDialog(null, "Please enter all the fields!");
         }
         else if(!phoneFormat(phoneNumber))
         {
-            JOptionPane.showMessageDialog(null, "Phone format incorrect!");
+            JOptionPane.showMessageDialog(null, "PhoneNumber format is incorrect!");
         }
         else if(!deliveryManDirectory.isPhoneUnique(phoneNumber)){
-            JOptionPane.showMessageDialog(null, "Phone No already registered, try loging in!");
+            JOptionPane.showMessageDialog(null, "PhoneNumber is already registered, try to log in again!");
         }
         else if(!system.getUserAccountDirectory().checkIfUsernameIsUnique(username)){
             JOptionPane.showMessageDialog(null, "Username already exists!");
@@ -208,7 +208,7 @@ public class CreateDeliveryManJPanel extends javax.swing.JPanel {
             Employee employee = system.getEmployeeDirectory().createEmployee(deliveryMan.getDeliveryId());
             
             UserAccount account = system.getUserAccountDirectory().createUserAccount(username, password, employee, new DeliverManRole());
-            JOptionPane.showMessageDialog(null, "Delivery Man added!");
+            JOptionPane.showMessageDialog(null, "Delivery Man is added!");
             nameTextField.setText("");
             contactNoTextField.setText("");
             addressTextField.setText("");

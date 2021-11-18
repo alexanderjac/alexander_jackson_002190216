@@ -42,6 +42,24 @@ public class UserAccountDirectory {
         return userAccount;
     }
     
+    public UserAccount getUserByEmployeeId(String id){
+        for(UserAccount user: userAccountList){
+            if(user.getEmployee().getName().equalsIgnoreCase(id)){
+                return user;
+            }
+        }
+        return null;
+    }
+    
+    public void removeAllAccounts(){
+        for(int i =0 ; i< userAccountList.size();i++)
+            if(!userAccountList.get(i).getUsername().equalsIgnoreCase("sysadmin"))
+                userAccountList.remove(i);
+        
+        for(int i =0 ; i< userAccountList.size();i++)
+            System.out.println(userAccountList.get(i).getEmployee());
+    }
+    
     public boolean checkIfUsernameIsUnique(String username){
         for (UserAccount ua : userAccountList){
             if (ua.getUsername().equals(username))

@@ -210,26 +210,26 @@ public class CreateRestaurantJPanel extends javax.swing.JPanel {
         String licenseNo = txtlicenseNo.getText();
         
         if(username.isEmpty() || password.isEmpty() || name.isEmpty() || address.isEmpty() || phoneNumber.isEmpty() || managerName.isEmpty() || licenseNo.isEmpty() || img == null){
-            JOptionPane.showMessageDialog(null, "Please enter all fields!");
+            JOptionPane.showMessageDialog(null, "Please enter all the fields!");
         } 
         else if(!phoneFormat(phoneNumber))
         {
-            JOptionPane.showMessageDialog(null, "Phone format incorrect!");
+            JOptionPane.showMessageDialog(null, "Phone number format is incorrect!");
         }
         else if(!system.getUserAccountDirectory().checkIfUsernameIsUnique(username)){
             JOptionPane.showMessageDialog(null, "Username already exists!");
         }
         else if(!restaurantDirectory.isPhoneUnique(phoneNumber)){
-            JOptionPane.showMessageDialog(null, "Phone No already registered!");
+            JOptionPane.showMessageDialog(null, "Phone number already registered!");
         }
         else if(!restaurantDirectory.isUniqueLicenseNo(licenseNo)){
-            JOptionPane.showMessageDialog(null, "License No already exists!");
+            JOptionPane.showMessageDialog(null, "License Number already exists!");
         }
         else{
             Restaurant restaurant = restaurantDirectory.add(managerName,name,phoneNumber,address,img, licenseNo);
             Employee employee = system.getEmployeeDirectory().createEmployee(restaurant.getRestaurantId());
             UserAccount account = system.getUserAccountDirectory().createUserAccount(username, password, employee, new AdminRole());
-            JOptionPane.showMessageDialog(null, "Restaurant added!");
+            JOptionPane.showMessageDialog(null, "Restaurant is added!");
             restaurantNameTextField.setText("");
             restaurantAddressTextField.setText("");
             restaurantPhoneNoTextField.setText("");
