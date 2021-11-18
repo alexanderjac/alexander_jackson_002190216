@@ -23,25 +23,13 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <Component id="btnback" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="330" max="-2" attributes="0"/>
               <Component id="lblAddCustomer" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
           </Group>
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="260" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="189" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="txtcustomerName" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
-                          <Component id="txtcustomerContactNo" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
-                          <Component id="txtcustomerAddress" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
-                      <Component id="btnaddCustomer" min="-2" max="-2" attributes="0"/>
-                  </Group>
                   <Component id="lblCustomerName" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lblCustomerNo" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="lblCustomerAddress" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -57,8 +45,19 @@
                           <Component id="txtusername" min="-2" pref="140" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="189" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="btnaddCustomer" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="txtcustomerName" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                              <Component id="txtcustomerContactNo" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                              <Component id="txtcustomerAddress" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace pref="648" max="32767" attributes="0"/>
+              <EmptySpace pref="416" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -70,7 +69,7 @@
                   <Component id="btnback" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblAddCustomer" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="txtusername" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="lblUserName" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -95,9 +94,9 @@
                   <Component id="lblCustomerAddress" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtcustomerAddress" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
               <Component id="btnaddCustomer" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="257" max="32767" attributes="0"/>
+              <EmptySpace pref="222" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

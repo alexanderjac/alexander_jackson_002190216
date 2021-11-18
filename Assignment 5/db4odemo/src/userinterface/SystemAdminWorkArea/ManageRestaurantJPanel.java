@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author dhankuwarsisodiya
+ * @author jacksonalexander
  */
 public class ManageRestaurantJPanel extends javax.swing.JPanel {
 
@@ -61,7 +61,7 @@ public class ManageRestaurantJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
         jLabel1.setText("Restaurants");
 
         restaurantJTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -134,7 +134,7 @@ public class ManageRestaurantJPanel extends javax.swing.JPanel {
                 .addComponent(backBtn)
                 .addGap(388, 388, 388)
                 .addComponent(jLabel1)
-                .addGap(0, 500, Short.MAX_VALUE))
+                .addGap(0, 493, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,13 +144,13 @@ public class ManageRestaurantJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel1)
                     .addComponent(backBtn))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(addRestaurantBtn)
                     .addComponent(viewRestaurantDetailsBtn)
                     .addComponent(deleteRestaurantBtn))
-                .addGap(505, 505, 505))
+                .addGap(393, 393, 393))
         );
     }// </editor-fold>//GEN-END:initComponents
 

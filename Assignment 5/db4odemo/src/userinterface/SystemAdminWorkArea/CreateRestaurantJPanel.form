@@ -24,9 +24,14 @@
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="btnback" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
+                      <Component id="lblRestaurant" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="269" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="lblUserName" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="lblPassword" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -46,22 +51,14 @@
                                   <Component id="restaurantNameTextField" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
                                   <Component id="txtlicenseNo" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
                                   <Component id="chooseImgBtn" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnaddRestaurant" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Component id="lblLicenceNo" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="126" max="-2" attributes="0"/>
-                      <Component id="btnaddRestaurant" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="btnback" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="287" max="-2" attributes="0"/>
-                      <Component id="lblRestaurant" min="-2" max="-2" attributes="0"/>
-                  </Group>
               </Group>
-              <EmptySpace min="98" pref="745" max="32767" attributes="0"/>
+              <EmptySpace min="98" pref="617" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -73,7 +70,7 @@
                   <Component id="lblRestaurant" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="btnback" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="lblUserName" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="txtusername" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -115,7 +112,7 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="btnaddRestaurant" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="198" max="32767" attributes="0"/>
+              <EmptySpace pref="204" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

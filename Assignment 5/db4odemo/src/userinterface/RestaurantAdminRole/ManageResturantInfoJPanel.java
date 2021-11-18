@@ -24,7 +24,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dhankuwarsisodiya
+ * @author jacksonalexander
  */
 public class ManageResturantInfoJPanel extends javax.swing.JPanel {
 

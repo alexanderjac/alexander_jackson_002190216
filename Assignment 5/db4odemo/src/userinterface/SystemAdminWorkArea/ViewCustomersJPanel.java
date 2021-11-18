@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author dhankuwarsisodiya
+ * @author jacksonalexander
  */
 public class ViewCustomersJPanel extends javax.swing.JPanel {
 
@@ -104,18 +104,9 @@ public class ViewCustomersJPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(backBtn)
-                .addGap(59, 59, 59)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(24, 24, 24)
-                        .addComponent(jButton1)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(37, 37, 37)
+                        .addGap(216, 216, 216)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2)
@@ -123,11 +114,19 @@ public class ViewCustomersJPanel extends javax.swing.JPanel {
                             .addComponent(jLabel5))
                         .addGap(60, 60, 60)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(customerContactNoTextField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+                            .addComponent(customerContactNoTextField, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(customerNameTextField, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(customerIdTextField, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(customerAddressTextField))))
-                .addGap(0, 676, Short.MAX_VALUE))
+                            .addComponent(customerAddressTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(305, 305, 305)
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(355, 355, 355)
+                        .addComponent(jLabel1)))
+                .addContainerGap(422, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

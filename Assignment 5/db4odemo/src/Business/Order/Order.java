@@ -13,7 +13,7 @@ import Business.WorkQueue.WorkRequest;
 
 /**
  *
- * @author dhankuwarsisodiya
+ * @author jacksonalexander
  */
 public class Order extends WorkRequest{
     private String orderId;
