@@ -1,8 +1,10 @@
 package Business;
 
 import Business.Employee.Employee;
+import Business.Employee.EmployeeDirectory;
 import Business.Role.SystemAdminRole;
 import Business.UserAccount.UserAccount;
+import java.io.IOException;
 
 /**
  *
@@ -10,7 +12,7 @@ import Business.UserAccount.UserAccount;
  */
 public class ConfigureASystem {
     
-    public static EcoSystem configure(){
+    public static EcoSystem configure() throws IOException{
         
         EcoSystem system = EcoSystem.getInstance();
         
@@ -20,10 +22,11 @@ public class ConfigureASystem {
         //have some employees 
         //create user account
         
+        System.out.println("check10");
+        EmployeeDirectory employeeDir = system.getEmployeeDirectory();
+        Employee emp = employeeDir.createEmployee("PPH");
         
-        Employee employee = system.getEmployeeDirectory().createEmployee("RRH");
-        
-        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = system.getUserAccountDirectory().createUserAccount("sysadmin", "sysadmin", emp, new SystemAdminRole());
         
         return system;
     }

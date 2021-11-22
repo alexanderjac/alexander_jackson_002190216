@@ -69,7 +69,7 @@ public class ViewDeliveryManJPanel extends javax.swing.JPanel {
         saveBtn = new javax.swing.JButton();
         image = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         backBtn.setText("Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {

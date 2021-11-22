@@ -101,7 +101,7 @@ public class ManageResturantInfoJPanel extends javax.swing.JPanel {
         editBtn = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel1.setText("Restaurant Info");
 

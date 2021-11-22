@@ -48,6 +48,8 @@ public class ManageDeliveryJPanel extends javax.swing.JPanel {
         for (UserAccount ua : system.getUserAccountDirectory().getUserAccountList()) {
             for (DeliveryMan deliveryMan : deliveryManDirectory.getDeliveryManDirectory()) {
                 if (deliveryMan.getDeliveryId().equalsIgnoreCase(ua.getEmployee().getName())) {
+                    if(ua.getRole().toString().equals("Business.Role.DeliverManRole")) {
+                        
                     Object[] row = new Object[5];
                     row[0] = deliveryMan.getDeliveryId();
                     row[1] = deliveryMan.getName();
@@ -55,6 +57,8 @@ public class ManageDeliveryJPanel extends javax.swing.JPanel {
                     row[3] = deliveryMan.getAddress();
                     row[4] = ua.getUsername();
                     model.addRow(row);
+                                        }
+
                 }
             }
         }
@@ -77,7 +81,7 @@ public class ManageDeliveryJPanel extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         backBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         deliveryJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

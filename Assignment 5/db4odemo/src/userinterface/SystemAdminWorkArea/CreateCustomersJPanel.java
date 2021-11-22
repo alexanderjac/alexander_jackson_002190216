@@ -33,7 +33,7 @@ public class CreateCustomersJPanel extends javax.swing.JPanel {
     public EcoSystem system;
     public CreateCustomersJPanel(JPanel container,EcoSystem system, CustomerDirectory customerDirectory) {
         initComponents();
-        this.customerDirectory = customerDirectory;
+        this.customerDirectory = system.getCustomerDirectory();
         this.container = container;
         this.system = system;
     }
@@ -61,7 +61,7 @@ public class CreateCustomersJPanel extends javax.swing.JPanel {
         txtusername = new javax.swing.JTextField();
         txtpassword = new javax.swing.JPasswordField();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         lblAddCustomer.setText("Add Customer");
 

@@ -12,6 +12,7 @@ import Business.Order.OrderDirectory;
 import Business.Restaurant.RestaurantDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
+import java.io.IOException;
 import java.util.ArrayList;
 
 /**
@@ -26,11 +27,12 @@ public class EcoSystem extends Organization{
     private DeliveryManDirectory deliveryManDirectory;
     private OrderDirectory orderDirectory;
 
- public EcoSystem(RestaurantDirectory restaurantDirectory, CustomerDirectory customerDirectory, DeliveryManDirectory deliveryManDirectory) {
+ public EcoSystem() throws IOException {
 
-        this.restaurantDirectory = restaurantDirectory;
-        this.customerDirectory = customerDirectory;
-        this.deliveryManDirectory = deliveryManDirectory;
+        this.restaurantDirectory = new RestaurantDirectory();
+        this.customerDirectory = new CustomerDirectory();
+        this.deliveryManDirectory = new DeliveryManDirectory();
+        this.orderDirectory = new OrderDirectory();
     }
 
     public OrderDirectory getOrderDirectory() {
@@ -40,8 +42,40 @@ public class EcoSystem extends Organization{
     public void setOrderDirectory(OrderDirectory orderDirectory) {
         this.orderDirectory = orderDirectory;
     }
+
+    public static EcoSystem getBusiness() {
+        return business;
+    }
+
+    public static void setBusiness(EcoSystem business) {
+        EcoSystem.business = business;
+    }
+
+    public RestaurantDirectory getRestaurantDirectory() {
+        return restaurantDirectory;
+    }
+
+    public void setRestaurantDirectory(RestaurantDirectory restaurantDirectory) {
+        this.restaurantDirectory = restaurantDirectory;
+    }
+
+    public CustomerDirectory getCustomerDirectory() {
+        return customerDirectory;
+    }
+
+    public void setCustomerDirectory(CustomerDirectory customerDirectory) {
+        this.customerDirectory = customerDirectory;
+    }
+
+    public DeliveryManDirectory getDeliveryManDirectory() {
+        return deliveryManDirectory;
+    }
+
+    public void setDeliveryManDirectory(DeliveryManDirectory deliveryManDirectory) {
+        this.deliveryManDirectory = deliveryManDirectory;
+    }
     
-    public static EcoSystem getInstance(){
+    public static EcoSystem getInstance() throws IOException{
         if(business==null){
             business=new EcoSystem();
         }
@@ -54,10 +88,10 @@ public class EcoSystem extends Organization{
         roleList.add(new SystemAdminRole());
         return roleList;
     }
-    private EcoSystem(){
-        super(null);
-        orderDirectory = new OrderDirectory();
-    }
+//    private EcoSystem(){
+//        super(null);
+//        orderDirectory = new OrderDirectory();
+//    }
 
     
     public boolean checkIfUserIsUnique(String userName){

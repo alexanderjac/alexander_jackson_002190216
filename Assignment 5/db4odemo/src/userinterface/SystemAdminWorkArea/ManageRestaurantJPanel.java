@@ -35,7 +35,7 @@ public class ManageRestaurantJPanel extends javax.swing.JPanel {
     public ManageRestaurantJPanel(JPanel container, EcoSystem system, RestaurantDirectory restaurantDirectory) {
         initComponents();
         this.container = container;
-        this.restaurantDirectory = restaurantDirectory;
+        this.restaurantDirectory = system.getRestaurantDirectory();
         this.system = system;
         //this.employeeDirectory = employeeDirectory;
 
@@ -161,6 +161,8 @@ public class ManageRestaurantJPanel extends javax.swing.JPanel {
         for (UserAccount ua : system.getUserAccountDirectory().getUserAccountList()) {
             for (Restaurant restaurant : restaurantDirectory.getRestaurantDirectory()) {
                 if (restaurant.getRestaurantId().equalsIgnoreCase(ua.getEmployee().getName())) {
+                    if(ua.getRole().toString().equals("Business.Role.AdminRole")) {
+                        
                     Object[] row = new Object[7];
                     row[0] = restaurant.getRestaurantId();
                     row[1] = restaurant.getName();
@@ -170,6 +172,8 @@ public class ManageRestaurantJPanel extends javax.swing.JPanel {
                     row[5] = restaurant.getAddress();
                     row[6] = restaurant.getLicenseNo();
                     model.addRow(row);
+                                        }
+
                 }
             }
         }

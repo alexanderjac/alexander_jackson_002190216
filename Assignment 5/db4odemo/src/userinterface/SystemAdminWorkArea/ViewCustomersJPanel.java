@@ -65,7 +65,7 @@ public class ViewCustomersJPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel1.setText("Edit Customer");
 

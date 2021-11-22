@@ -47,6 +47,12 @@ public abstract class Organization {
         ++counter;
     }
     public Organization(){
+                employeeDirectory = new EmployeeDirectory();
+                        userAccountDirectory = new UserAccountDirectory();
+                                workQueue = new WorkQueue();
+
+
+
         
     }
     public abstract ArrayList<Role> getSupportedRole();
@@ -60,6 +66,7 @@ public abstract class Organization {
     }
 
     public EmployeeDirectory getEmployeeDirectory() {
+        System.out.println("check3");
         return employeeDirectory;
     }
     

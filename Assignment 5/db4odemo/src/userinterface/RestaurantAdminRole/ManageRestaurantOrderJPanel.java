@@ -123,7 +123,7 @@ public class ManageRestaurantOrderJPanel extends javax.swing.JPanel {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel9.setText("Orders");
 

@@ -46,9 +46,9 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         this.userProcessContainer = userProcessContainer;
         this.business = business;
         this.userAccount = account;
-        this.customerDirectory = customerDirectory;
-        this.restaurantDirectory = restaurantDirectory;
-        this.deliveryManDirectory = deliveryManDirectory;
+        this.customerDirectory = business.getCustomerDirectory();
+        this.restaurantDirectory = business.getRestaurantDirectory();
+        this.deliveryManDirectory = business.getDeliveryManDirectory();
         this.menuDirectory = menuDirectory;
         //valueLabel.setText(enterprise.getName());
         populateRequestTable();
@@ -114,7 +114,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         orderComment = new javax.swing.JTextField();
         jButton3 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         menuJTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

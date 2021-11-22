@@ -41,7 +41,7 @@ public class CreateDeliveryManJPanel extends javax.swing.JPanel {
     private JPanel container;
     public CreateDeliveryManJPanel(JPanel container, EcoSystem system, DeliveryManDirectory deliveryManDirectory) {
         initComponents();
-        this.deliveryManDirectory = deliveryManDirectory;
+        this.deliveryManDirectory = system.getDeliveryManDirectory();
         this.system = system;
         this.container = container;
     }
@@ -71,7 +71,7 @@ public class CreateDeliveryManJPanel extends javax.swing.JPanel {
         btnBack = new javax.swing.JButton();
         txtpassword = new javax.swing.JPasswordField();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         lblAddDeliveryMan.setText("Add Delivery Man");
 

@@ -40,9 +40,9 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
         initComponents();
         this.userProcessContainer=userProcessContainer;
         this.ecosystem=ecosystem;
-        this.customerDirectory = customerDirectory;
-        this.restaurantDirectory = restaurantDirectory;
-        this.deliveryManDirectory = deliveryManDirectory;
+        this.customerDirectory = ecosystem.getCustomerDirectory();
+        this.restaurantDirectory = ecosystem.getRestaurantDirectory();
+        this.deliveryManDirectory = ecosystem.getDeliveryManDirectory();
         this.menuDirectory = menuDirectory;
         this.orderDirectory = orderDirectory;
         populateTree();
@@ -100,11 +100,13 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
 
         jSplitPane.setLeftComponent(jPanel1);
 
+        jPanel2.setBackground(new java.awt.Color(238, 115, 51));
+
         jLabel1.setText("Selected Node:");
 
         lblSelectedNode.setText("<View_selected_node>");
 
-        btnManageCustomers.setBackground(new java.awt.Color(237, 56, 51));
+        btnManageCustomers.setBackground(new java.awt.Color(51, 51, 51));
         btnManageCustomers.setForeground(new java.awt.Color(255, 255, 255));
         btnManageCustomers.setText("Manage All Customers");
         btnManageCustomers.addActionListener(new java.awt.event.ActionListener() {
@@ -113,7 +115,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnManageRestaurants.setBackground(new java.awt.Color(237, 56, 51));
+        btnManageRestaurants.setBackground(new java.awt.Color(51, 51, 51));
         btnManageRestaurants.setForeground(new java.awt.Color(255, 255, 255));
         btnManageRestaurants.setText("Manage Restaurants");
         btnManageRestaurants.addActionListener(new java.awt.event.ActionListener() {
@@ -122,7 +124,7 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             }
         });
 
-        btnManageDelivery.setBackground(new java.awt.Color(237, 56, 51));
+        btnManageDelivery.setBackground(new java.awt.Color(51, 51, 51));
         btnManageDelivery.setForeground(new java.awt.Color(255, 255, 255));
         btnManageDelivery.setText("Manage Deliveryman");
         btnManageDelivery.addActionListener(new java.awt.event.ActionListener() {

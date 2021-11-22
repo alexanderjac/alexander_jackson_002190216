@@ -76,7 +76,7 @@ public class ViewRestaurantsJPanel extends javax.swing.JPanel {
         licenseNoTextField = new javax.swing.JTextField();
         restImage = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel1.setText("Edit Restaurant");
 

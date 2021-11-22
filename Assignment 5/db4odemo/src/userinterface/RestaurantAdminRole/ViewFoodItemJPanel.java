@@ -73,7 +73,7 @@ public class ViewFoodItemJPanel extends javax.swing.JPanel {
         changeImgBtn = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel1.setText("View/ Edit Food Item");
 

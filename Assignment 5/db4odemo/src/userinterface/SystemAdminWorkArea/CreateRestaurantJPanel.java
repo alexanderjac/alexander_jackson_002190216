@@ -40,7 +40,7 @@ public class CreateRestaurantJPanel extends javax.swing.JPanel {
     private EcoSystem system;
     public CreateRestaurantJPanel(JPanel container, EcoSystem system,RestaurantDirectory restaurantDirectory) {
         initComponents();
-        this.restaurantDirectory = restaurantDirectory;
+        this.restaurantDirectory = system.getRestaurantDirectory();
         this.container = container;
         this.system = system;
     }
@@ -74,7 +74,7 @@ public class CreateRestaurantJPanel extends javax.swing.JPanel {
         txtlicenseNo = new javax.swing.JTextField();
         passwordTextField = new javax.swing.JPasswordField();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         lblRestaurant.setText("Restaurant");
 

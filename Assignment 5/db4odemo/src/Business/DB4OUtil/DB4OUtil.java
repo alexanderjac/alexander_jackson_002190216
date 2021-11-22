@@ -7,6 +7,7 @@ import com.db4o.ObjectContainer;
 import com.db4o.ObjectSet;
 import com.db4o.config.EmbeddedConfiguration;
 import com.db4o.ta.TransparentPersistenceSupport;
+import java.io.IOException;
 import java.nio.file.Paths;
 
 /**
@@ -60,7 +61,7 @@ public class DB4OUtil {
         conn.close();
     }
     
-    public EcoSystem retrieveSystem(){
+    public EcoSystem retrieveSystem() throws IOException{
         ObjectContainer conn = createConnection();
         ObjectSet<EcoSystem> systems = conn.query(EcoSystem.class); // Change to the object you want to save
         EcoSystem system;

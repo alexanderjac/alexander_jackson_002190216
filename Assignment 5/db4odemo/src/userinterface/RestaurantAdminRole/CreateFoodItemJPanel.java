@@ -68,7 +68,7 @@ public class CreateFoodItemJPanel extends javax.swing.JPanel {
         addBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel1.setText("Add Food Item");
 

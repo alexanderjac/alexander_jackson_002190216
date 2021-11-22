@@ -23,6 +23,7 @@ public class EmployeeDirectory {
     }
     
     public Employee createEmployee(String name){
+        System.out.println("check2 "+name);
         Employee employee = new Employee();
         employee.setName(name);
         employeeList.add(employee);

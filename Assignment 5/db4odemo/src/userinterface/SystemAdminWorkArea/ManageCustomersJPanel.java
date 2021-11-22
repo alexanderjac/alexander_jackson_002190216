@@ -31,7 +31,7 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
 
     public ManageCustomersJPanel(JPanel userProcessContainer, EcoSystem system, CustomerDirectory customerDirectory) {
         initComponents();
-        this.customerDirectory = customerDirectory;
+        this.customerDirectory = system.getCustomerDirectory();
         this.container = userProcessContainer;
         this.system = system;
         populate();
@@ -44,6 +44,8 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
         for (UserAccount ua : system.getUserAccountDirectory().getUserAccountList()) {
             for (Customer customer : customerDirectory.getCustomerDirectory()) {
                 if (customer.getCustomerId().equalsIgnoreCase(ua.getEmployee().getName())) {
+                    if(ua.getRole().toString().equals("Business.Role.CustomerRole")) {
+                        
                     Object[] row = new Object[5];
                     row[0] = customer.getCustomerId();
                     row[1] = customer.getName();
@@ -51,6 +53,8 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
                     row[3] = customer.getAddress();
                     row[4] = ua.getUsername();
                     model.addRow(row);
+                                        }
+
                 }
             }
         }
@@ -73,7 +77,7 @@ public class ManageCustomersJPanel extends javax.swing.JPanel {
         addCustomerBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(255, 255, 255));
+        setBackground(new java.awt.Color(238, 115, 51));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel1.setText("Customers");
